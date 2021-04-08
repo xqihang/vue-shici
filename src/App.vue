@@ -1,30 +1,55 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+  <div class="g-layout">
+
+    <div class="g-header" v-if="pageTitle">{{pageTitle}}</div>
+
+    <router-view/>
+
+    <div class="g-footer">
+      <a href="/">首页</a>
+      <a href="/about">独白</a>
+    </div>
   </div>
-  <router-view/>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
+<script>
+export default {
+  name: 'Layout',
+  computed: {
+    pageTitle() {
+      return this.$route.meta.title || ''
     }
   }
 }
+</script>
+
+<style lang="scss">
+  .g-layout {
+    padding-top: 0.3rem;
+    width: 100%;
+    max-width: 5rem;
+    margin: 0 auto;
+    .g-header {
+      font-size: 0.2rem;
+      font-weight: bold;
+      margin-bottom: 0.3rem;
+    }
+    .g-footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 1rem;
+      font-size: 0.15rem;
+      font-weight: bold;
+      a {
+        margin: 0 0.15rem;
+      }
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    .g-header {
+      text-align: center;
+    }
+  }
 </style>

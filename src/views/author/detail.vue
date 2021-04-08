@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import { listAll } from '@/api/index'
+import { findByUserId } from '@/api/index'
 import Poetry from '@/components/poetry'
 export default {
   name: 'Index',
@@ -18,7 +18,7 @@ export default {
     }
   },
   mounted() {
-    listAll().then(res => {
+    findByUserId(this.$route.params.id).then(res => {
       this.data = res;
     })
   }
@@ -27,5 +27,8 @@ export default {
 
 <style scoped lang="scss">
   .page-index {
+    width: 100%;
+    max-width: 5rem;
+    margin: 0 auto;
   }
 </style>

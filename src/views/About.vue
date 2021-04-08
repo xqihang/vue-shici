@@ -1,5 +1,39 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
+  <div class="page-about">
+    <h3>独白</h3>
+	<p>一个在编程代码与诗意人生中穿行的95后、游戏黑洞、深夜情感治愈系主播。诗和远方就在笔端，用深情研磨，每个人都是诗人。就让我们在这片江湖重逢，邂逅这样的文字、聆听让彼此内心共振的声音！</p>
+	<h3>缘起</h3>
+	<p>我从小就有一个梦想，执剑携酒走天涯，凭着自己的喜好在这片江湖上与人讨教诗词歌赋，仿佛是这个世上最令我快乐的事情。</p>
+    <p>时隔多年，梦境虽破，但诗意仍在。所以为自己开辟出这一方独属于我的净土，将深情寄予在这浅浅的文字，聊以慰藉吾之内心。</p>
+    <p>江湖多变，望你能不变初心。将深情与这诗意化作自己的桃林，醉酒于此~</p>
   </div>
 </template>
+
+<script>
+export default {
+  name: 'About',
+  data() {
+    return {}
+  },
+  mounted() {
+  }
+}
+</script>
+
+<style scoped lang="scss">
+  .page-about {
+    width: 100%;
+    max-width: 5rem;
+    margin: 0 auto;
+    padding: 0.3rem;
+    font-size: 0.16rem;
+    background: #fff;
+    h3 {
+        padding-top: 0.1rem;
+    }
+    h3, p {
+        padding-bottom: 0.15rem;
+        line-height: 1.8;
+    }
+  }
+</style>

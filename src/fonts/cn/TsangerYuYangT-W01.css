@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "TsangerYuYangT-W01";
+  src: url("TsangerYuYangT-W01.woff2") format("woff2"),
+       url("TsangerYuYangT-W01.woff") format("woff"),
+       url("TsangerYuYangT-W01.ttf") format("truetype"),
+       url("TsangerYuYangT-W01.eot") format("embedded-opentype"),
+       url("TsangerYuYangT-W01.svg") format("svg"),
+       url("TsangerYuYangT-W01.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}

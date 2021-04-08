@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "Neoneon-2";
+  src: url("Neoneon-2.woff2") format("woff2"),
+       url("Neoneon-2.woff") format("woff"),
+       url("Neoneon-2.ttf") format("truetype"),
+       url("Neoneon-2.eot") format("embedded-opentype"),
+       url("Neoneon-2.svg") format("svg"),
+       url("Neoneon-2.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
